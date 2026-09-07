@@ -5,5 +5,9 @@ export default defineConfig({
   // ...existing config
   test: {
     pool: "threads",
+    singleThread: true,
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./src/setupTests.js",
   },
 });
